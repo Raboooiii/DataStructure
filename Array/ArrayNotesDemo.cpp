@@ -1,4 +1,4 @@
-#include "KrishnaArray.cpp"
+#include "ArrayNotes.cpp"
 
 int main(){
 	cout<<"INSERTION OPERATIONS\n";
