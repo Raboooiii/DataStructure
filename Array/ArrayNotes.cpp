@@ -1,4 +1,4 @@
-#include"KrishnaArray.h"
+#include"ArrayNotes.h"
 
 template <class T>
 Array<T>::Array()
