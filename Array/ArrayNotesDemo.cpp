@@ -42,5 +42,56 @@ int main(){
 	myArray.bubble_sort();
 	cout<<"AFTER BUBBLE SORT:\n"<<myArray;
 
-	return 0;
+//Quick Sort
+	cout<<"QUICK  SORT:\n";
+    int arr[] = {10, 7, 8, 9, 1, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    cout << "\nOriginal array: \n";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    quickSort(arr, 0, n - 1);
+
+    cout << "\nSorted array: \n";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+	//Merge Sort
+	cout<<"\nMERGE SORT:\n";
+    int arraym[] = {12, 11, 13, 5, 6, 7};
+    int arr_size = sizeof(arraym) / sizeof(arraym[0]);
+
+    cout << "\nGiven array is \n";
+    for (int i = 0; i < arr_size; i++)
+        cout << arraym[i] << " ";
+    cout << endl;
+
+    mergeSort(arraym, 0, arr_size - 1);
+
+    cout << "\nSorted array is \n";
+    for (int i = 0; i < arr_size; i++)
+        cout << arraym[i] << " ";
+    cout << endl;
+
+	//Another Array
+
+    Array2<int> arrNew;
+    int a[] = {1, 2, 3, 3, 5, 5, 7, 8, 9, 10};
+    for (int i = 0; i < 10; i++)
+        arrNew.arr2[i] = a[i];
+
+    cout<< arr <<endl;
+
+    arrNew.rotate_clockwise(2, 10);
+    arrNew.rotate_anti_clockwise(3, 10);
+    arrNew.listDistinctElement();
+    arrNew.frequencyTable();
+
+
+    return 0;
 }
